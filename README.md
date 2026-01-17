@@ -83,6 +83,7 @@ In accordance with the assignment requirements regarding the use of AI tools:
 
 ## 🔗 Links
 
-* **Live AWS Endpoint**: [Insert your live URL here]
+* **Live AWS Endpoint**: http://3.110.48.79:8000/
 
 * **Crypto API Provider**: [FreeCryptoAPI](https://freecryptoapi.com)
+
