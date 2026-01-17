@@ -18,8 +18,12 @@ connectDb();
 // API Routes
 app.use("/api/v1/alerts", alertRoutes);
 
-app.listen(process.env.PORT || 8000, () => {
-  console.log(`Server is running on port ${process.env.PORT || 8080}`);
-  startPriceMonitor();
-  console.log("Price Monitor Worker started...");
-});
+if (process.env.NODE_ENV !== "test") {
+  app.listen(process.env.PORT || 8000, () => {
+    console.log(`Server is running on port ${process.env.PORT || 8080}`);
+    startPriceMonitor();
+    console.log("Price Monitor Worker started...");
+  });
+}
+
+module.exports = app; 

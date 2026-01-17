@@ -3,7 +3,7 @@ const Alert = require("../models/Alert");
 
 const monitorPrices = async () => {
   try {
-    console.log("Monitoring Price for Active Alerts after 3s")
+    console.log("Monitoring Price for Active Alerts after 3s");
     const activeAlerts = await Alert.find({ status: "PENDING" });
     if (activeAlerts.length === 0) return;
 
@@ -16,7 +16,7 @@ const monitorPrices = async () => {
       },
     );
 
-    const prices = response.data.symbols; 
+    const prices = response.data.symbols;
 
     for (const alert of activeAlerts) {
       const liveData = prices.find((p) => p.symbol === alert.symbol);
@@ -42,4 +42,4 @@ const startPriceMonitor = () => {
   setInterval(monitorPrices, 30000);
 };
 
-module.exports = { startPriceMonitor };
+module.exports = { startPriceMonitor, monitorPrices };
