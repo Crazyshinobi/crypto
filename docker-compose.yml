@@ -1,20 +1,16 @@
 version: '3.8'
 
 services:
-  # The Application (API + Worker)
   app:
     build: .
     ports:
       - "8000:8000"
-    environment:
-      - PORT=8000
-      - MONGO_URI=mongodb+srv://chetansingh410_db_user:IRwJOfTj9D4Dp4xW@cryptosentinel.gxm2cvo.mongodb.net/?appName=CryptoSentinel
-      - CRYPTO_API_KEY=qcczg3ti7gwalp30hdh8
+    env_file:
+      - .env
     depends_on:
       - db
     restart: always
 
-  # The Database
   db:
     image: mongo:latest
     ports:
