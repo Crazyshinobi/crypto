@@ -40,7 +40,7 @@ A scalable Node.js service that monitors real-time cryptocurrency prices and tri
 1. **Clone the repository:**
    ```bash
    git clone https://github.com/Crazyshinobi/crypto.git
-   cd crypto-senitnel
+   cd crypto-sentinel
    npm install
 
 2. **Define Environment Variables**
@@ -81,3 +81,4 @@ In accordance with the assignment requirements regarding the use of AI tools:
 * **Live AWS Endpoint**: [Insert your live URL here]
 * **Crypto API Provider**: [FreeCryptoAPI](https://freecryptoapi.com)
 * **API Documentation**: [FreeCryptoAPI Documentation](https://freecryptoapi.com/documentation/)
+
