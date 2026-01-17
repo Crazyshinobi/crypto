@@ -53,6 +53,11 @@ A scalable Node.js service that monitors real-time cryptocurrency prices and tri
    ```bash
    npm run dev
 
+### Docker file runner
+   ```bash
+   docker-compose up --build
+   ```
+
 ## 📡 API Endpoints
 
 | Method | Endpoint | Description |
@@ -79,4 +84,5 @@ In accordance with the assignment requirements regarding the use of AI tools:
 ## 🔗 Links
 
 * **Live AWS Endpoint**: [Insert your live URL here]
+
 * **Crypto API Provider**: [FreeCryptoAPI](https://freecryptoapi.com)
