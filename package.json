@@ -1,0 +1,28 @@
+{
+  "name": "crypto-sentinel",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon ./src/app.js",
+    "start": "node ./src/app.js",
+    "test": "jest --detectOpenHandles --forceExit"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "axios": "^1.13.2",
+    "dotenv": "^17.2.3",
+    "express": "^5.2.1",
+    "mongodb": "^7.0.0",
+    "mongoose": "^9.1.4",
+    "nodemon": "^3.1.11"
+  },
+  "devDependencies": {
+    "axios-mock-adapter": "^2.1.0",
+    "jest": "^30.2.0",
+    "mongodb-memory-server": "^11.0.1",
+    "supertest": "^7.2.2"
+  }
+}
